@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 2.6)
-project(407_BiharmonicCoordinates)
+project(609_Boolean)
+
+#find_package(CGAL REQUIRED)
+#include(${CGAL_USE_FILE})
 
 include_directories(${LIBIGL_INCLUDE_DIRS})
 add_executable(${PROJECT_NAME}_bin
