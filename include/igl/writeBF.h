@@ -1,30 +1,30 @@
-#ifndef IGL_READBF_H
-#define IGL_READBF_H
+#ifndef IGL_WRITEBF_H
+#define IGL_WRITEBF_H
 #include "igl_inline.h"
 #include <Eigen/Core>
 #include <string>
 namespace igl
 {
-  // Read a bones forest from a file, returns a list of bone roots
+  // Write a bones forest to a file
+  //
   // Input:
   //   file_name  path to .bf bones tree file
-  // Output:
   //   WI  #B list of unique weight indices
   //   P  #B list of parent indices into B, -1 for roots
-  //   C  #B list of tip positions
+  //   O  #B list of tip offsets
   // Returns true on success, false on errors
   template < 
     typename DerivedWI,
     typename DerivedP,
-    typename DerivedC>
-  IGL_INLINE bool readBF(
+    typename DerivedO>
+  IGL_INLINE bool writeBF(
     const std::string & filename,
-    Eigen::PlainObjectBase<DerivedWI> & WI,
-    Eigen::PlainObjectBase<DerivedP> & P,
-    Eigen::PlainObjectBase<DerivedC> & C);
+    const Eigen::PlainObjectBase<DerivedWI> & WI,
+    const Eigen::PlainObjectBase<DerivedP> & P,
+    const Eigen::PlainObjectBase<DerivedO> & O);
 }
 
 #ifndef IGL_STATIC_LIBRARY
-#  include "readBF.cpp"
+#  include "writeBF.cpp"
 #endif
 #endif
