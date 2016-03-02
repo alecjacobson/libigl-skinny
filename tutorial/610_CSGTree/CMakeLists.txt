@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.6)
-project(407_BiharmonicCoordinates)
+project(610_CSGTree)
 
 include_directories(${LIBIGL_INCLUDE_DIRS})
 add_executable(${PROJECT_NAME}_bin
