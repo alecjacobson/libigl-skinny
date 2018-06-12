@@ -12,10 +12,10 @@ if(LIBIGL_WITH_EMBREE)
 	# Note that if we use the URL of the release directly, we don't have to download the .git folder (saves 70 MB)
 	download_project(
 		PROJ           embree
-		URL            https://github.com/embree/embree/archive/v3.2.0.tar.gz
-		URL_MD5        f414fefe6167ba58102fd0eb06c9ee5b
+		URL            https://github.com/embree/embree/archive/v2.17.4.tar.gz
+		URL_MD5        2038f3216b1d626e87453aee72c470e5
 		# GIT_REPOSITORY https://github.com/embree/embree.git
-		# GIT_TAG        v3.2.0
+		# GIT_TAG        v2.17.4
 		SOURCE_DIR     ${LIBIGL_EXTERNAL}/embree
 	)
 endif()

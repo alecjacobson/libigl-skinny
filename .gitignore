@@ -23,6 +23,8 @@ external/tinyxml2/CMakeFiles*
 external/tinyxml2/CMakeCache.txt
 external/tinyxml2/cmake_install.cmake
 external/tinyxml2/Makefile
+external/eigen
+external/embree
 external/embree/build/*
 external/embree/bin/*
 external/embree/bin
