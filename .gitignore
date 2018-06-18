@@ -18,6 +18,13 @@ examples/*/*.rbr
 example_static
 example_header_only
 example1
+external/.cache/
+external/CoMISo/
+external/glfw/
+external/imgui/imgui/
+external/tetgen/
+external/tinyxml2/
+external/triangle/
 external/yimg/.git*
 external/tinyxml2/CMakeFiles*
 external/tinyxml2/CMakeCache.txt
