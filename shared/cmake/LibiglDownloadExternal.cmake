@@ -57,11 +57,6 @@ function(igl_download_embree)
 	)
 endfunction()
 
-## lim
-function(igl_download_lim)
-	# TODO
-endfunction()
-
 ## GLFW
 function(igl_download_glfw)
 	igl_download_project(glfw
